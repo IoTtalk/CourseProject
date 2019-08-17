@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html>
+<head>
+  <title>Pong!</title> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <link href="pong.css" media="screen, print" rel="stylesheet" type="text/css" /> 
+</head> 
+ 
+<body> 
+  <canvas id="game">
+  </canvas>
+
+  <script src="game.js" type="text/javascript"></script> 
+  <script src="pong.js" type="text/javascript"></script>
+  <script src="iot/jquery.js" type = "text/javascript"></script>
+  <script src="iot/dan2.js"></script>
+  <script src="iot/dai.js"></script>
+  <script src="iot/dai-app.js"></script>
+  
+
+
+
+  <script type="text/javascript">
+    Game.ready(function() {
+
+      var size = document.getElementById('size');
+      var pong = Game.start('game', Pong, {});
+      console.log(pong)
+      var timerID = window.setInterval(() => { 
+        pong.move()
+      }, 50);
+    });
+				
+  </script>
+
+</body> 
+</html>
