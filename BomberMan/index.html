@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <title>Bomberman</title>
+    <meta name="description" content="HTML5 game written in JavaScript with help of EaselJS library">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+    <meta property="og:image" content="http://matousskala.cz/files/bomberman_screen.png" />
+
+    <script type="text/javascript" src="bower_components/EaselJS/lib/easeljs-0.8.1.min.js"></script>
+    <script type="text/javascript" src="bower_components/PreloadJS/lib/preloadjs-0.6.1.min.js"></script>
+    <script type="text/javascript" src="bower_components/SoundJS/lib/soundjs-0.6.1.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/Utils.js"></script>
+    <script type="text/javascript" src="js/Entity.js"></script>
+    <script type="text/javascript" src="js/Player.js"></script>
+    <script type="text/javascript" src="js/Sniper.js"></script>
+    <script type="text/javascript" src="js/Bot.js"></script>
+    <script type="text/javascript" src="js/Bonus.js"></script>
+    <script type="text/javascript" src="js/Tile.js"></script>
+    <script type="text/javascript" src="js/Fire.js"></script>
+    <script type="text/javascript" src="js/Bomb.js"></script>
+    <script type="text/javascript" src="js/Menu.js"></script>
+    <script type="text/javascript" src="js/InputEngine.js"></script>
+    <script type="text/javascript" src="js/GameEngine.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/docs/assets/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+<body onload="gGameEngine.load()">
+    <div class="container">
+        <div class="page-header">
+            <i class="picture"></i><h1>Bomber<strong>man</strong></h1>
+        </div>
+        <div id="game">
+            <canvas id="canvas" width="545" height="416"></canvas>
+        </div>
+		<div class = "action"></div>
+		Run the HTTP server: simplehttpserver<br>
+		Launch https://127.0.0.1:8000
+        <h3>How to play</h3>
+        <h4>Player</h4>
+        <ul>
+            <li><strong>手機傾斜方向</strong> &hellip; move</li>
+            <li><strong>上下甩動</strong> &hellip; plant the bomb</li>
+        </ul>
+        <hr>
+
+        <div class="footer">
+            
+        </div>
+    </div>
+</body>
+	<script src="./js/jquery.js" type="text/javascript"></script>
+	<script src="./js/dan2.js"></script>
+    <script src="./js/dai.js"></script>		
+    <script src="./js/ida.js"></script>
+
+	<!--<script src="./js/dan2018-100.js"></script>
+    <script src="./js/dai018-100.js"></script>		
+    <script src="./js/ida018-100.js"></script>-->
+</html>
